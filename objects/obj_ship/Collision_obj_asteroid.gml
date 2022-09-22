@@ -1,3 +1,24 @@
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 0A69B34B
+/// @DnDArgument : "soundid" "snd_die"
+/// @DnDSaveInfo : "soundid" "snd_die"
+audio_play_sound(snd_die, 0, 0, 1.0, undefined, 1.0);
+
+/// @DnDAction : YoYo Games.Common.Apply_To
+/// @DnDVersion : 1
+/// @DnDHash : 51A3F3AF
+/// @DnDApplyTo : {obj_game}
+with(obj_game) {
+	/// @DnDAction : YoYo Games.Instances.Set_Alarm
+	/// @DnDVersion : 1
+	/// @DnDHash : 71D5867C
+	/// @DnDParent : 51A3F3AF
+	/// @DnDArgument : "steps" "60"
+	/// @DnDArgument : "alarm" "1"
+	alarm_set(1, 60);
+}
+
 /// @DnDAction : YoYo Games.Common.Apply_To
 /// @DnDVersion : 1
 /// @DnDHash : 25778C87
